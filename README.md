@@ -9,6 +9,10 @@ For general background on what `scrypt` is, and why it's useful, see
 and [Colin Percival's page on
 scrypt](http://www.tarsnap.com/scrypt.html).
 
+## Windows environment setup
+1. Install C++ build tools from http://landinghub.visualstudio.com/visual-cpp-build-tools
+1. add `cl.exe` and `msbuild.exe` to `PATH` : verify from cmd
+
 ## Using the library
 
 The entry points are `erlscrypt:scrypt/6` and `erlscrypt:scrypt/7`.
