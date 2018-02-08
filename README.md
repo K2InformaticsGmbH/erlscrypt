@@ -9,9 +9,13 @@ For general background on what `scrypt` is, and why it's useful, see
 and [Colin Percival's page on
 scrypt](http://www.tarsnap.com/scrypt.html).
 
-## Windows environment setup
-1. Install C++ build tools from http://landinghub.visualstudio.com/visual-cpp-build-tools
-1. add `cl.exe` and `msbuild.exe` to `PATH` : verify from cmd
+## Windows environment setup x64
+1. Install C++ build tools from https://www.visualstudio.com/thank-you-downloading-visual-studio/?sku=BuildTools&rel=15
+1. Select Build Tools and C++ CLI option and execute the installation 
+1. Add environment variable `INCLUDE` with value `C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.12.25827\include;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\ucrt;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\shared;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\um;C:\Program Files (x86)\Windows Kits\10\include\10.0.16299.0\winrt;`
+1. Add environment variable `LIB` with value `C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.12.25827\lib\x64;C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\lib\um\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.16299.0\ucrt\x64;C:\Program Files (x86)\Windows Kits\10\lib\10.0.16299.0\um\x64;`
+1. Add `C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\VC\Tools\MSVC\14.12.25827\bin\Hostx64\x64` to environment vairiable `PATH`
+1. If while compiling there is an error while linking, execute `which link` verify if this is pointing to visual studio build tools folder. If not rename the other linker that is being fetched from the path.
 
 ## Using the library
 
