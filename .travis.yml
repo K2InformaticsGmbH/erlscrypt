@@ -11,6 +11,8 @@ otp_release:
 
 script:
   - ERL_INTERFACE_DIR="$(ls -d ~/otp/$TRAVIS_OTP_RELEASE/lib/erl_interface*/)"
+  - OTP_ERTS_DIR="$(ls -d ~/otp/$TRAVIS_OTP_RELEASE/erts*/)"
   - tree $ERL_INTERFACE_DIR
+  - tree $OTP_ERTS_DIR
   - ./rebar3 compile
   - ./rebar3 eunit
