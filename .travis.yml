@@ -10,7 +10,6 @@ otp_release:
   - 20.2
 
 script:
-  - ERL_INTERFACE_DIR="$(ls -d /usr/lib/erlang/lib/erl_interface*/)"
-  - tree $ERL_INTERFACE_DIR
+  - tree ~/otp
   - ./rebar3 compile
   - ./rebar3 eunit
