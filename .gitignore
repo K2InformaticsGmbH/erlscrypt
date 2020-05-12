@@ -1,5 +1,7 @@
-*.swp
 *.pdb
+*.swp
+.idea
+.rebar3/
 _build*
 c_src/*.o
 erl_crash.dump
@@ -8,4 +10,3 @@ rebar.lock
 rebar3.crashdump
 test/*.beam
 tmp
-.rebar3/

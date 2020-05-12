@@ -6,7 +6,7 @@
             kernel,
             stdlib
         ]},
-        {licenses, ["Apache-2.0"]},
+        {licenses, ["Konnexions Public License (KX-PL)"]},
         {links, [{"GitHub", "https://github.com/KonnexionsGmbH/erlscrypt"}]},
         {mod, {erlscrypt, []}}
     ]}.
